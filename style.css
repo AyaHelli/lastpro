@@ -1,3 +1,16 @@
 .body_style{
-    background-color: aliceblue;
+    background-image: url(https://cdn.pixabay.com/photo/2017/03/03/16/23/background-2114367__480.jpg);
+    
+}
+.formses{
+    background-color: rgba(61, 65, 68, 0.528);
+    border-radius: 10px royalblue solid;
+    padding-bottom: 150px;
+    padding-top: 50px;
+    margin-top: 5vw;
+    margin-left: 20vw;
+   
+}
+.txt{
+    margin-bottom: 10vw;
 }

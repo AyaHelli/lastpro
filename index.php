@@ -72,13 +72,14 @@ mysqli_close($connect);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login & Registration System</title>
+    <link rel="stylesheet" href="style.css">
     <?php require_once 'components/boot.php' ?>
 </head>
 
 <body class="body_style">
     <div class="container justify-content-center">
-        <div class="row justify-content-center text-center text-danger">
-            <form class="col-6 form_top" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
+        <div class=" justify-content-center text-center text-dark">
+            <form class="col-6 form formses" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
                 <h2 class="txt">Sign In</h2>
                 <?php
                 if (isset($errMSG)) {
@@ -86,11 +87,11 @@ mysqli_close($connect);
                 }
                 ?>
     
-                <input type="email" autocomplete="off" name="email" class="form-control" placeholder="Your Email" value="<?php echo $email; ?>" maxlength="40" />
+                <input type="email" autocomplete="off" name="email" class="form-control mb-3" placeholder="Your Email" value="<?php echo $email; ?>" maxlength="40" />
                 <span class="text-danger"><?php echo $emailError; ?></span>
                 <div class="nsl"></div>
     
-                <input type="password" name="pass" class="form-control" placeholder="Your Password" maxlength="15" />
+                <input type="password" name="pass" class="form-control mb-3" placeholder="Your Password" maxlength="15" />
                 <span class="text-danger"><?php echo $passError; ?></span>
                 <div class="nsl"></div>
                 
