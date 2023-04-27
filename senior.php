@@ -25,7 +25,7 @@ if (mysqli_num_rows($result)   > 0) {
         $tbody .= "
     <div class = 'col-lg-4 col-md-6 col-sm-12 p-3'>
         <div class='card' style='width: 18rem;'>
-            <img src='" . $rowp['picture'] . "' class='card-img-top' alt='...' style='height: 250px;'>
+            <img src='pictures/" . $rowp['picture'] . "' class='card-img-top' alt='...' style='height: 250px;'>
                 <div class='card-body shadow-lg'>
                 <h5 class='card-title'>" . $rowp['name'] . "</h5>
                 <p class='card-text'><span class = 'fw-bold'>Location : </span>" . $rowp['location'] . "</p>

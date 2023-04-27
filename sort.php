@@ -31,7 +31,7 @@ if (isset($_GET["vaccinated"])) {
             $body .= "
             <div class = 'col-lg-4 col-md-6 col-sm-12 p-3'>
                 <div class='card' style='width: 18rem;'>
-                    <img src='" . $row['picture'] . "' class='card-img-top' alt='...' style='height: 250px;'>
+                    <img src='pictures/" . $row['picture'] . "' class='card-img-top' alt='...' style='height: 250px;'>
                         <div class='card-body shadow-lg'>
                         <h5 class='card-title'>" . $row['name'] . "</h5>
                         <p class='card-text'><span class = 'fw-bold'>Species : </span>" . $row['species'] . "</p>
@@ -62,7 +62,7 @@ if (isset($_GET["vaccinated"])) {
             $body .= "
             <div class = 'col-lg-4 col-md-6 col-sm-12 p-3'>
                 <div class='card' style='width: 18rem;'>
-                    <img src='picture/" . $row['picture'] . "' class='card-img-top' alt='...' style='height: 250px;'>
+                    <img src='pictures/" . $row['picture'] . "' class='card-img-top' alt='...' style='height: 250px;'>
                         <div class='card-body shadow-lg'>
                         <h5 class='card-title'>" . $row['name'] . "</h5>
                         <p class='card-text'><span class = 'fw-bold'>species : </span>" . $row['species'] . "</p>
